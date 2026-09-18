@@ -4,7 +4,7 @@ import { server as wisp } from '@mercuryworkshop/wisp-js/server';
 
 const app=express();
 const server=createServer(app);
-const PORT=Number(process.env.PORT)||9001;
+const PORT=process.env.PORT?Number(process.env.PORT):9001;console.log('STACKHOST PORT ENV:',process.env.PORT);console.log('USING PORT:',PORT);
 
 app.use('/sj-assets/',express.static('node_modules/@mercuryworkshop/scramjet/dist'));app.use('/sj-assets/',express.static('node_modules/@mercuryworkshop/scramjet/dist'));app.use('/scramjet/',express.static('node_modules/@mercuryworkshop/scramjet/dist'));app.use('/baremux/',express.static('node_modules/@mercuryworkshop/bare-mux/dist'));app.use('/libcurl/',express.static('node_modules/@mercuryworkshop/libcurl-transport/dist'));app.use(express.static('public'));
 
