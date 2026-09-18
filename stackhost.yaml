@@ -1,0 +1,9 @@
+version: "1"
+services:
+  - name: breeze
+    type: web
+    runtime: node
+    install: npm install
+    start: npm start
+    env:
+      NODE_VERSION: "22"

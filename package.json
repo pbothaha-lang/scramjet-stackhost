@@ -1,0 +1,20 @@
+{
+  "name": "scramjet-stackhost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mercuryworkshop/bare-mux": "^2.1.9",
+    "@mercuryworkshop/libcurl-transport": "^1.5.2",
+    "@mercuryworkshop/scramjet": "^1.1.0",
+    "@mercuryworkshop/wisp-js": "^0.5.0",
+    "express": "^5.2.1"
+  }
+}
