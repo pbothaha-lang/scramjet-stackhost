@@ -1,4 +1,4 @@
-importScripts('/sj-assets/scramjet.all.js');
+importScripts('/sj-assets/scramjet.all.js?v=3');
 const workerModule = self.$scramjetLoadWorker();
 const scramjet = new workerModule.ScramjetServiceWorker();
 self.addEventListener('install', function(event) { self.skipWaiting(); });
