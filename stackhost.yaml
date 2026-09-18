@@ -1,9 +1,12 @@
-version: "1"
-services:
-  - name: breeze
-    type: web
-    runtime: node
-    install: npm install
-    start: npm start
-    env:
-      NODE_VERSION: "22"
+runtime:
+  image: node:22
+
+commands:
+  package: ""
+  build:
+    - "npm install"
+  start: "npm start"
+
+repository:
+  branch: main
+  auto_deploy: true
